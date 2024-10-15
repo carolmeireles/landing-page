@@ -4,13 +4,17 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.79.5"
   }
 }

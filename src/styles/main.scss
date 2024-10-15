@@ -1,0 +1,28 @@
+@use 'header';
+@use 'vars';
+@use 'footer';
+@use 'hero';
+
+@font-face {
+    font-family: NotoSerif;
+    src: url(../../assets/fonts/NotoSerifDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: NotoSerif;
+    src: url(../../assets/fonts/NotoSerifDisplay-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: NotoSerif, serif;
+}
+
+body {
+    background-color: vars.$bgColor;
+    color: vars.$textColor;
+}
