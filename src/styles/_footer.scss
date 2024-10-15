@@ -22,6 +22,10 @@
                 text-decoration: none;
                 color: vars.$textColor;
 
+                &:hover {
+                    opacity: .5;
+                }
+
                 img {
                     height: 30px;
                 }

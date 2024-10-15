@@ -15,11 +15,23 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: NotoSerif, serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
