@@ -1,8 +1,5 @@
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    display: block;
+    display: flex;
     position: relative;
 
     img {
@@ -26,9 +23,17 @@
         p {
             padding: 5px 0;
             font-family: NotoSerif, serif;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
         }
         strong {
             padding-top: 8px;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -49,10 +54,14 @@
     }
 
     &--center {
-        align-items: center;
+        justify-content: center;
+        text-align: center;
 
         &__text-container {
+            left: 50%;
+            transform: translate(-50%);
             text-align: center;
+            width: 50%;
         }
     }
 }
