@@ -25,14 +25,15 @@
             font-family: NotoSerif, serif;
 
             @media (max-width: 768px) {
-                font-size: 12px;
+                font-size: 13px;
             }
         }
         strong {
             padding-top: 8px;
 
             @media (max-width: 768px) {
-                font-size: 12px;
+                font-size: 13px;
+                overflow-y: hidden;
             }
         }
     }
@@ -54,14 +55,28 @@
     }
 
     &--center {
-        justify-content: center;
-        text-align: center;
 
         &__text-container {
             left: 50%;
             transform: translate(-50%);
             text-align: center;
             width: 50%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &--right, &--left {
+        
+        @media (max-width: 768px) {
+
+            &__text-container {
+                left: 50%;
+                transform: translate(-50%);
+                width: 100%;
+            }
         }
     }
 }

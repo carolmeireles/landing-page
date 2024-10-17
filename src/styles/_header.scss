@@ -8,6 +8,15 @@
     align-items: center;
     padding: 16px;
 
+    @media (max-width: 768px) {
+        display: block;
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+
     a {
         text-decoration: none;
 
@@ -26,9 +35,18 @@
         list-style-type: none;
         display: flex;
 
+        @media (max-width: 768px) {
+            margin-top: 8px;
+            justify-content: center;
+        }
+
         &__item {
             text-transform: uppercase;
             font-size: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
 
             &:nth-child(2){
                 padding: 0 16px;
